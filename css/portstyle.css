@@ -1,0 +1,828 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+#home,
+#about,
+#skills,
+#projects,
+#contact {
+    height: 90vh;
+    width: 100vw;
+ } 
+body
+{
+    /* background: url("back.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+nav {
+    display: inline-block;
+    background: crimson;
+    width: 100vw;
+    position:fixed;
+    top: 0px;
+    z-index: 999;
+}
+nav .logo{
+    display: inline;
+    float: left;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: white;
+}
+
+ span{
+color: rgb(29, 2, 2);
+}
+ul{
+    float: right;
+    padding:4px;
+    padding-right: 20px;
+}
+li {
+
+    list-style: none;
+    float:left;
+    padding: 10px 10px;
+    border-radius: 6px;
+    margin: 7px 10px;
+    color: black;   
+}
+li a {
+    color: black;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 600;
+    transition: all 0.2s ease-in;
+}
+ li a:hover,.active {
+    font-size:3rem;
+    font-weight: bold;
+    color: white;
+}
+#home {
+    background: rgb(29, 2, 2);
+    height: 100vh;
+}
+/* #home img{
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+} */
+#home .left{
+    float: left;
+    margin: 30px;
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 50%;
+}
+#home .nagma{
+    float: right;
+    height: 420px;
+    width: 340px;
+    margin-top: 12%;
+    margin-right: 10%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 5px rgb(95, 81, 81);
+}
+.text1{
+  padding-top: 10%;
+    margin: 20px 12%;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    top: 20px;
+}
+.text2{
+    margin: 20px 12%;
+    font-size: 80px;
+    font-weight: bold;
+   color: crimson;
+
+  }
+.text3 {
+  margin: 20px 12%;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.text3 span{
+    color:white;
+    font-weight: 600;
+    text-shadow: 0 0 5px crimson , 0 0 10px crimson, 0 0 15px crimson, 
+    0 0 20px crimson, 0 0 25px crimson,0 0 30px crimson, 0 0 35px crimson ;
+    font-size: 43px;
+    /* letter-spacing: 2px; */
+}
+.text3 span:after{
+    content: '';
+   animation: work 10s infinite linear;
+   
+}
+@keyframes work{
+    0%{ content:  "Frontend Developer" ; }
+    40%{  content:  "Website Developer ";
+        text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 
+        0 0 20px blue, 0 0 25px blue,0 0 30px blue, 0 0 35px blue ; 
+    }
+    65%{  content:" WordPress Developer"; 
+        text-shadow: 0 0 5px crimson , 0 0 10px crimson, 0 0 15px crimson, 
+        0 0 20px crimson, 0 0 25px crimson,0 0 30px crimson, 0 0 35px crimson ;
+     }
+    100%{ content:  " Creator" ; 
+        text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 
+        0 0 20px blue, 0 0 25px blue,0 0 30px blue, 0 0 35px blue ; 
+    }
+
+}
+#home #more{
+    display: none;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 12px 36px;
+    
+}
+#home button{
+    background-color: crimson;
+    height: 30%;
+    margin: 20px 12%;
+    padding: 12px 36px;
+    color:white;
+    font-size: 25px;
+    border-radius: 6px;
+    border:2px solid white ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  #home button:hover{
+    background-color: #fff;
+    color: crimson;
+    font-weight: bolder;
+    border: 2px solid crimson;
+    } 
+
+ /* about style */
+ #about{
+     height: auto;
+
+ }
+#about .title{
+    display: block;
+    color: crimson;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    padding-top: 10%;
+  text-align: center;
+  
+ }
+
+#about .content{
+ margin: 20px;   
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+margin-top: 10%;
+}
+.card,.card2 {        
+   background:crimson;
+    text-align: center;
+    display: inline-block;
+    width: calc(30% - 30px);
+     padding: 29px 20px;
+    margin: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 5px rgb(95, 81, 81);
+    transition: all 0.2s ease-in;
+    border-radius: 5px;
+    height: 280px;
+    flex:1 1 200px;
+}
+.card:hover{
+    color: white;
+    transition: all 0.5s ease;
+    
+}
+#about .text {
+color: white;
+font-size: 35px;
+font-weight: 600;
+position: relative;
+padding-bottom: 15px; 
+
+}
+p{
+font-size: 28px;
+
+}
+#about .ignou{
+    height: 100px;
+    width: 300px;
+    border-radius: 6px;   
+}
+#about #exp{
+    float:right;
+    padding-right: 10%;
+}
+#about .id{
+    float: left;
+    height: 230px;
+    width: 160px;
+}
+#about .exp_p{
+height: 200px;
+padding: 10px;
+width: 400px;
+float: right;
+font-size: 25px;
+
+} 
+#about li{
+    font-size: 21px;
+    padding: 1px;
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+}
+#about li:hover{
+    color: white;
+
+}
+/* skills style */
+#skills{
+    height: auto;
+    background: rgb(29, 2, 2) ;
+}
+#skills .title{
+    display: block;
+    color: crimson;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    padding-top: 7%;
+    text-align: center;
+ }
+ #skills .content{
+    /* margin: 20px;    */
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 5%;
+   
+ }
+ #skills .box{
+    background:crimson;
+     text-align: center;
+     display: inline-block;
+     margin: 15px;
+     box-shadow: 5px 5px 5px 5px rgb(95, 81, 81);
+     transition: all 1s ease-in;
+     border-radius: 5px;
+     height: 200px;
+     flex:1 1 190px;
+     font-size: 30px;
+     font-weight: bold;
+     align-items: center;
+     /* display: grid;
+     place-items:center; */
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+ }
+ #skills .box:hover{
+     -webkit-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     transform: scale(1.2);
+     color: white;
+ }
+ #skills img{
+     height: 130px;
+     width: 150px;
+     border-radius: 6px;
+ }
+ #skills .box p{
+     /* padding: 15px; */
+     
+     text-align: center;
+ }
+/* project style */
+#projects{
+
+    width: 100%;
+    height: auto;
+}
+#projects .title{
+    color: crimson;
+    font-size: 50px;
+    font-weight: 600;
+    /* margin: 30px; */
+    padding-top: 7%;
+    text-align: center;
+ }
+#projects .content{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 10%;
+
+}
+#projects .content .text{
+    text-align: center;
+    background: crimson;
+   border-radius:6px;
+     margin: 20px;
+     color: white;
+     box-shadow: 5px 5px 5px 5px  rgb(89, 92, 92);
+    font-size: 30px;
+     height: 150px;
+     flex:1 1 150px;
+     font-weight: bold;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+}
+#projects .content .text a{
+    color: white;
+    text-decoration: none;
+}
+/* contact style */
+#contact{
+    margin-top: 5%;
+    height: 90vh;
+}
+#contact .title{
+    font-family:sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 8%;
+ }
+ 
+ #contact .content .title-2 {
+    text-align: center;
+} 
+#contact .content .left-title{
+    font-size: 25px;
+
+}
+#contact .content .left{
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+#contact span{
+    color: crimson;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+#contact .content{
+    display: inline;
+}
+#contact .content p {
+    text-align: left;
+    font-size: 20px;
+}
+#contact .content .head{
+    margin-top: 12px;
+    padding: 8px;
+    color: crimson;
+    font-size:25px;
+    font-weight:bold;
+}
+#contact .content .sub-title{
+    margin-top: 12px;
+    padding: 8px;
+    font-size: 20px;
+    
+}
+#contact .content .right{
+    display:inline;
+    
+}
+#contact .content .right fieldset{
+    padding: 10px;
+    width: 30%;
+    margin-left: 60%;
+}
+#contact .content .right legend{
+    color: crimson;
+    font-weight: bold;
+    font-size: 30px;
+}
+#contact .content .right .input{
+padding: 10px;
+margin: 8px;
+border: 2px solid rgb(129, 122, 122) ;
+border-radius: 5px;
+display: block;
+}
+#contact .content .right textarea{
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid rgb(129, 122, 122) ;
+    border-radius: 5px;
+    }
+    #contact .content .right .submit{
+    display: block;
+    padding: 5px;
+    margin: 8px;
+    background  : crimson;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+ /* responsive work */
+@media  (max-width:997px ){
+    body{
+        height: 100%;
+        background-size: 100%;;
+    }
+    nav{
+        width: 100%;
+    }
+    nav .logo{
+        font-size: 30px;
+    }
+    li {
+        padding: 5px 5px;
+    }
+    li a {
+     font-size: 30px;
+    }
+    .text1{
+        padding-top:15%;
+        margin: 10px 5%;
+        font-size: 30px;
+
+    }
+    .text2{
+        margin: 10px 5%;
+        font-size: 60px;
+      }
+    .text3 {
+      margin: 10px 5%;
+      font-size: 30px;
+    }
+    .text3 span {
+        font-size: 32px;
+    }
+    #home button{
+        background-color: crimson;
+        height: 30%;
+        margin: 15px 5%;
+        padding: 12px 15px;
+        font-size: 20px;
+      }
+      #home .nagma{
+        float: right;
+        height: 380px;
+        width: 280px;
+        margin-top: 12%;
+        margin-right: 8%;
+    }
+    #home #more{
+        display: none;
+        width: 100%;
+        color: white;
+        font-size: 1.2rem;
+        padding: 12px 15px;
+    }
+      /* responsive about */
+      
+      #about .title{
+        font-size: 45px;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+      }
+       #about .text {
+        font-size: 27px;
+        padding-bottom: 15px;   
+        }
+        p{
+        font-size: 23px;
+        }
+        #about .exp_p{
+        height: 200px;
+        padding: 10px;
+        width: 180px;
+        font-size: 22px;
+        } 
+        #about #exp{
+            float:right;
+            padding-right: 0%;
+        }
+        #about li{
+            font-size: 20px;
+        }
+        /* project responsive */
+        
+        #projects .title{
+            font-size: 45px;
+         }
+        /* contact responsive */
+        
+        #contact .title{
+            font-size: 30px;
+         }
+        #contact .content .left-title{
+            font-size: 22px;
+        
+        }
+        #contact .content .left{
+            float: left;
+            width: 50%;
+            margin-top: 20px;
+            margin-left: 5%;
+        }
+        #contact span{
+            font-size: 22px;
+        }
+        #contact .content p {
+         font-size: 19px;
+        }
+        #contact .content .head{
+            padding: 5px;
+            font-size:22px;
+        }
+        #contact .content .sub-title{
+            padding: 5px;
+            font-size: 19px;
+        }
+        #contact .content .right legend{
+            font-size: 25px;
+        }
+        #contact .content .right .input{
+            padding: 8px;
+            margin: 6px;
+            }
+            #contact .content .right textarea{
+                padding: 8px;
+                margin: 6px;
+                columns: 20;
+                }
+        #contact .content .right .submit{
+            margin-left: 35%;
+            font-size: 15px;
+            }
+            
+} 
+@media (max-width:768px) {
+    
+    nav{
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 200px;
+        flex-direction: column;
+        align-items: flex-start;
+        /* transform: translateX(-250px); */
+    }
+    ul{
+       position: sticky;
+    }
+    nav .logo{
+        font-size: 30px;
+        margin-bottom: 30px;
+        padding-top: 15%;
+        position: sticky;
+    }
+    li{
+        border-bottom: 1px solid rgb(206, 196, 196);
+    }
+    li a {
+     font-size: 30px;
+     display: block;
+    }
+    input{
+        display: none;
+    }
+    label{
+        background: black;
+    }
+    .sideicon{
+        width: 22px;
+        height: 22px;
+        position: fixed;
+        z-index: 999;
+        top: 22px;
+        left: 15px;
+        cursor: pointer;    
+    }
+    .sideicon .spinner{
+        background: white;
+        height: 3px;
+        z-index: 2;
+        margin: 3px;  
+    }
+    #home .left{
+        margin: 30px;
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 35%;
+    }
+    #home .nagma{
+        float: right;
+        height: 380px;
+        width: 280px;
+        margin-top: 12%;
+        margin-right: 10%;
+        
+    }
+  /* about res */
+  #about .ignou{
+    height: 100px;
+    width: 180px;
+    border-radius: 6px;   
+}
+  #about .id{
+    float: left;
+    height: 200px;
+    width: 140px;
+}
+  #about .exp_p{
+    height: 200px;
+    padding: 5px;
+    width: 110px;
+    font-size: 19px;
+    } 
+    #about #exp{
+        padding-bottom: 10px; 
+        float: none;
+    }
+    #contact .content .left{
+        width: 45%;
+    }
+}
+@media (max-width:699px){
+    #about .id{
+        display: none;
+    }
+
+    #about .exp_p{
+        width: 230px;
+        font-size: 22px;
+        } 
+        #contact .content .left{
+            width: 40%;
+            margin: 2%;
+        }
+        #contact .content .right fieldset{
+            margin-left: 50%;
+            margin-right: 0%;
+        }
+}
+@media (max-width:620px) {
+    #home .left{
+        float: left;
+        margin: 30px;
+        margin-top: 3%;
+        margin-left: 5%;
+        width: 40%;
+    }
+    #home .nagma{
+        float: right;
+        height: 320px;
+        width: 200px;
+        margin-top: 12%;
+        margin-right: 10%;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 5px rgb(95, 81, 81);
+    }
+    .text1{
+        padding-top:15%;
+        margin: 10px 5%;
+        font-size: 27px;
+
+    }
+    .text2{
+        margin: 10px 5%;
+        font-size: 40px;
+      }
+    .text3 {
+      margin: 10px 5%;
+      font-size: 27px;
+    }
+    #about .text {
+        font-size: 23px;
+        padding-bottom: 15px;   
+        }
+    #about .exp_p{
+        width: 210px;
+        font-size: 20px;
+        display: flex;
+        } 
+}
+@media (max-width:567px){
+    #contact .content .right fieldset{
+        padding: 10px;
+        width: 25%;
+        margin-left: 50%;
+    }
+}
+@media(max-width:520px){
+    #body{
+        width: 100%;
+    }
+    #home .left{
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-bottom: 2%;
+        width: 90%;
+    }
+    #home .nagma{
+        float: left;
+        position: static;
+        height: 280px;
+        width: 170px;
+        margin-top: 0%;
+        margin-right: 2%;
+        margin-left: 12%;
+    }
+    
+    .text1{
+        padding-top:1%;
+        margin: 10px 5%;
+        font-size: 27px;
+    }
+    .text2{
+        margin: 10px 5%;
+        font-size: 40px;
+      }
+    .text3 {
+      margin: 10px 5%;
+      font-size: 27px;
+    }
+    #home button{
+        display: none;
+    }
+    #about .id{
+        display: inline;
+        width: 140px;
+    }
+    #about .exp_p{
+        width:150px;
+        font-size: 20px;
+        display: inline;
+        } 
+    #contact .content .left{
+        width: 90%;
+    }
+    #contact .content .right fieldset{
+        padding: 10px;
+        width: 90%;
+        margin-left: 0%;
+    }
+}
+@media(max-width:411px){
+    .card2{
+        padding: 9px 4px;
+    }
+    #about .id{
+        width: 120px;
+        height: 180px;
+        
+    }
+    #about .exp_p{
+        width:120px;
+        font-size: 20px;
+        display: inline;
+        } 
+}
+@media(max-width:330px){
+  .card2{
+    height: 300px;
+  }  
+  #about .id{
+    float: none;
+    margin-bottom: 3px;
+    display: block;
+    margin-left: 20%;
+}
+#about .exp_p{
+    float: none;
+    margin-top: 5px;
+    } 
+}
